@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+[株式会社万葉さんの新人社員教育用カリキュラム](https://github.com/everyleaf/el-training)を自分なりに作ってみました
 
-Things you may want to cover:
+## テーブル構造
 
-* Ruby version
+**2018/07/07 データ構造の作成**
+*不備があれば随時変更すること*
+### Taskモデル
+|column_name|id|task|status|period|explanation|priority|label|
+|data_type|integer|string|integer|string|string|integer|string|
 
-* System dependencies
+### Userモデル
+|column|id|user_name|
+|data_type|integer|string|
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
