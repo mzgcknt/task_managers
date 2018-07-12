@@ -1,7 +1,7 @@
 # task_managers
 
 ## Description
-[株式会社万葉さんの新人社員教育用カリキュラム](https://github.com/everyleaf/el-training)を自分なりに作ってみました
+[株式会社万葉さんの新人社員教育用カリキュラム](https://github.com/everyleaf/el-training)を自分なりに作ってみました。
 
 ## テーブル構造
 
