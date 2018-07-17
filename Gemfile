@@ -62,3 +62,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # ----------
 # PostgreSQLのデータベースドライバー
 gem 'pg', '>= 1.0.0'
+# エラーを分かりやすくする
+gem 'better_errors', '>= 2.4.0'
+# ページネーション機能
+gem 'kaminari', '>= 1.1.1'
+# コンソールの出力を整形
+gem 'awesome_print', '>= 1.8.0'
