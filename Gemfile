@@ -68,3 +68,5 @@ gem 'better_errors', '>= 2.4.0'
 gem 'kaminari', '>= 1.1.1'
 # コンソールの出力を整形
 gem 'awesome_print', '>= 1.8.0'
+# webpacker
+gem 'webpacker', github: 'rails/webpacker'
