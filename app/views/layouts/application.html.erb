@@ -7,10 +7,17 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
     <%= javascript_pack_tag 'hello_vue' %>
+    <!-- VuetifyのCSSの読み込み-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+  <div id="app">
+    <navbar></navbar>
+  </div>
+
+    <%= yield %>
   </body>
 </html>
