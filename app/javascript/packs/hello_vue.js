@@ -37,7 +37,7 @@
 
 
 import Vue from 'vue/dist/vue.esm'
-import Header from '../app.vue'
+import Header from '../components/app.vue'
 import Vuetify from 'vuetify'
 
 Vue.use(Vuetify)
@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
    const app = new Vue({
      el: '#app',
      data: {
-       message: "Can you say hello?"
+       message: "Can you say hello?",
      },
      components: {
-         'navbar' : Header,
+         'navbar' : Header, // Header → <navbar> App → <app>
      }
    })
  })
