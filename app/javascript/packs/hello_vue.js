@@ -6,13 +6,11 @@
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
 
 //import Vue from 'vue'
-//import Vuetify from 'vuetify'
 //import App from '../app.vue'
 
 
 //document.addEventListener('DOMContentLoaded', () => {
 //  const el = document.body.appendChild(document.createElement('hello'))
-//    Vue.use(Vuetify)
 //  const app = new Vue({
 //    el,
 //    render: h => h(App)
@@ -38,12 +36,14 @@
 
 import Vue from 'vue/dist/vue.esm'
 import Header from '../components/app.vue'
+import Router from './router/router'
 import Vuetify from 'vuetify'
 
 Vue.use(Vuetify)
 
 document.addEventListener('DOMContentLoaded', () => {
    const app = new Vue({
+     router: Router,
      el: '#app',
      data: {
        message: "Can you say hello?",

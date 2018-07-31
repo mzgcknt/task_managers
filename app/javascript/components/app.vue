@@ -7,22 +7,14 @@
                         <v-list-tile-avatar>
                             <img src="https://randomuser.me/api/portraits/men/85.jpg">
                         </v-list-tile-avatar>
-
                         <v-list-tile-content>
                             <v-list-tile-title>John Leider</v-list-tile-title>
                         </v-list-tile-content>
                     </v-list-tile>
                 </v-list>
-                </v-toolbar>
-
                 <v-list class="pt-0" dense>
                     <v-divider></v-divider>
-
-                    <v-list-tile
-                            v-for="item in items"
-                            :key="item.title"
-                            @click=""
-                    >
+                    <v-list-tile v-for="item in items" :key="item.title" :to="item.link">
                         <v-list-tile-action>
                             <v-icon>{{ item.icon }}</v-icon>
                         </v-list-tile-action>
@@ -50,10 +42,9 @@ export default {
   data: function () {
     return {
       message: "Hello Vue!",
-        drawer: null,
+        drawer: false,
         items: [
-            { title: 'Home', icon: 'dashboard' },
-            { title: 'About', icon: 'question_answer' }
+            { title: 'ログイン', icon: 'meeting_room', link: '/login'}
         ],
         right: null
     }
