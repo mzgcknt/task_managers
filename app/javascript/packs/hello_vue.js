@@ -35,6 +35,7 @@
 
 
 import Vue from 'vue/dist/vue.esm'
+import axios from 'axios'
 import Header from '../components/app.vue'
 import Router from './router/router'
 import Vuetify from 'vuetify'
